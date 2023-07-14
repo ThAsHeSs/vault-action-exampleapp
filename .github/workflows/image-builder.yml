@@ -16,4 +16,4 @@ jobs:
              kv-v2_1/11 2222
 
       - name: Build Docker Image
-        run: docker build . --file Dockerfile --build-arg app_secret="${{ env.2222 }}" -t    vault-action-exampleapp
+        run: docker build . --file Dockerfile --build-arg app_secret="${{ env.app_secret }}" -t    vault-action-exampleapp
