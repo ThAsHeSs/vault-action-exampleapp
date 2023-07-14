@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Import Secrets
-        uses: hashicorp/vault-action@v2
+        uses: hashicorp/vault-action@v2.6.0
         with:
           url: http://vault-poc-vault-lb-1766235720.us-east-1.elb.amazonaws.com
           tlsSkipVerify: true
